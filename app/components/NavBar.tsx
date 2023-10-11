@@ -27,10 +27,31 @@ export const Navbar = () => {
 
 
 	return (
+		<section className="flex justify-center items-center">
+    <div className='w-full md:w-3/4'>
 		<NextUINavbar maxWidth="xl" position="sticky">
-		
+			<NavbarContent className=" " justify="start">
+				
+				<ul className="hidden lg:flex gap-4 justify-start ml-2">
+					{siteConfig.navItems.map((item) => (
+						<NavbarItem key={item.href}>
+							<NextLink
+								className={clsx(
+									linkStyles({ color: 'secondary' }),
+									"data-[active=true]:text-primary data-[active=true]:font-medium"
+								)}
+								color="foreground"
+								href={item.href}
+							>
+								{item.label}
+							</NextLink>
+						</NavbarItem>
+					))}
+				</ul>
+			</NavbarContent>
+
 			<NavbarContent
-				className="hidden sm:flex basis-1/5 sm:basis-full"
+				className="hidden sm:flex basis-2/5 sm:basis-full"
 				justify="end"
 			>
 				<NavbarItem className="hidden sm:flex gap-2">
@@ -60,5 +81,6 @@ export const Navbar = () => {
 
 			
 		</NextUINavbar>
-	);
+		</div>
+    </section>);
 };
