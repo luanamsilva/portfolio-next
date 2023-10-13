@@ -6,7 +6,7 @@ import {
 
 } from "@nextui-org/navbar";
 
-
+import { ThemeSwitch } from "./theme";
 import { Link } from "@nextui-org/link";
 
 import { link as linkStyles } from "@nextui-org/theme";
@@ -62,7 +62,7 @@ export const Navbar = () => {
 					<Link isExternal href={siteConfig.links.github} aria-label="Github">
 						<GithubIcon className="text-default-500" />
 					</Link>
-				
+					<ThemeSwitch />
 				</NavbarItem>
 		
 				<NavbarItem className="hidden md:flex">
