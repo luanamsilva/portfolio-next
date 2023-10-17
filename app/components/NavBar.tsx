@@ -1,3 +1,4 @@
+"use client"
 import {
 	Navbar as NextUINavbar,
 	NavbarContent,
@@ -6,6 +7,7 @@ import {
 
 } from "@nextui-org/navbar";
 
+import { useState } from "react";
 import { ThemeSwitch } from "./theme";
 import { Link } from "@nextui-org/link";
 
@@ -23,17 +25,40 @@ import {
 
 
 
-export const Navbar = () => {
-
-
+export const Navbar  = () => {
+	const navItems= [
+		{
+			label: "Home",
+			href: "/",
+			id: 'home'
+		},
+ 
+    {
+      label: "Sobre",
+      href: "#about",
+			id: 'about'
+    },
+    {
+      label: "Projetos",
+      href: "#projects",
+			id: "projects"
+    },
+		{
+      label: "Educação",
+      href: "#education",
+			id: "education"
+    },
+   	]
+const [hoverNavItem, setHoverNavItem] = useState(navItems)
 	return (
-		<section className="flex justify-center items-center">
-    <div className='w-full md:w-3/4'>
+		
+		<section className="flex justify-center items-center p-4 fixed top-0 w-full h-16 z-50">
+    <div className='w-full '>
 		<NextUINavbar maxWidth="xl" position="sticky">
 			<NavbarContent className=" " justify="start">
-				
+				<div className="mx-auto border rounded-full p-2 bg-[#18181B] border-secondary-600/90">
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
-					{siteConfig.navItems.map((item) => (
+					{navItems.map((item) => (
 						<NavbarItem key={item.href}>
 							<NextLink
 								className={clsx(
@@ -47,11 +72,11 @@ export const Navbar = () => {
 							</NextLink>
 						</NavbarItem>
 					))}
-				</ul>
+				</ul></div>
 			</NavbarContent>
 
 			<NavbarContent
-				className="hidden sm:flex basis-2/5 sm:basis-full"
+				className="hidden sm:flex basis-2/5 sm:basis-full justify-between m-6"
 				justify="end"
 			>
 				<NavbarItem className="hidden sm:flex gap-2">

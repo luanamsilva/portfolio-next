@@ -6,8 +6,9 @@ import Projects from "./components/projects"
 export default function Home() {
   return (
     <main>
- <Navbar/>
+ 
 <Hero/>
+
 <section id="about">
       <About/>
  </section>
@@ -17,7 +18,6 @@ export default function Home() {
  <section id="education">
       <Education/>
  </section>
-   
     </main>
   )
 }
