@@ -30,7 +30,7 @@ export const Navbar  = () => {
 		{
 			label: "Home",
 			href: "/",
-			id: 'home'
+			id : 'home'
 		},
  
     {
@@ -49,24 +49,29 @@ export const Navbar  = () => {
 			id: "education"
     },
    	]
-const [hoverNavItem, setHoverNavItem] = useState(navItems)
+		 
+		 const [isActive, setIsActive] = useState<string | null>('/');
+		 
 	return (
 		
 		<section className="flex justify-center items-center p-4 fixed top-0 w-full h-16 z-50">
     <div className='w-full '>
 		<NextUINavbar maxWidth="xl" position="sticky">
 			<NavbarContent className=" " justify="start">
-				<div className="mx-auto border rounded-full p-2 bg-[#18181B] border-secondary-600/90">
+				<div className="mx-auto border rounded-full p-2 border-secondary-600/90">
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
 					{navItems.map((item) => (
 						<NavbarItem key={item.href}>
 							<NextLink
 								className={clsx(
 									linkStyles({ color: 'secondary' }),
-									"data-[active=true]:text-primary data-[active=true]:font-medium"
+								  ` px-4 py-2 rounded-full text-sm lg:text-base relative no-underline duration-300 ease-in, ${isActive === item.href
+                    ? "text-pink-500 font-medium"
+                    : "text-secondary"}`
 								)}
 								color="foreground"
-								href={item.href}
+								href={isActive ? item.href : "/"}
+								onClick={() => setIsActive(item.href)}
 							>
 								{item.label}
 							</NextLink>
