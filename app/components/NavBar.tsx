@@ -15,7 +15,7 @@ import { link as linkStyles } from "@nextui-org/theme";
 
 import { siteConfig } from "../config/site";
 import NextLink from "next/link";
-import clsx from "clsx";
+
 
 import {
 	LinkedInIcon,
@@ -58,19 +58,19 @@ export const Navbar  = () => {
     <div className='w-full '>
 		<NextUINavbar maxWidth="xl" position="sticky">
 			<NavbarContent className=" " justify="start">
-				<div className="mx-auto border rounded-full p-2 border-secondary-600/90">
+				<div className="mx-auto  rounded-full p-2 ">
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
 					{navItems.map((item) => (
 						<NavbarItem key={item.href}>
 							<NextLink
-								className={clsx(
-									linkStyles({ color: 'secondary' }),
-								  ` px-4 py-2 rounded-full text-sm lg:text-base relative no-underline duration-300 ease-in, ${isActive === item.href
+								className={
+									
+								  ` px-4 py-2 rounded-lg text-sm lg:text-base relative no-underline duration-300 ease-in, ${isActive === item.href
                     ? "text-pink-500 font-medium"
                     : "text-secondary"}`
-								)}
+								}
 								color="foreground"
-								href={isActive ? item.href : "/"}
+								href={isActive ? item.href : "/"} 
 								onClick={() => setIsActive(item.href)}
 							>
 								{item.label}

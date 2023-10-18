@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row m-4 p-4 gap-3 w-full md:w-3/4">
         <div className="place-self-center text-center md:text-left">
           <h1 className="text-secondary mb-4 px-4 text-4xl lg:text font-extrabold">
-            <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-500 lg:text-5xl'>Olá, eu sou</span>
+            <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-500 lg:text-5xl'>Olá, eu sou </span>
 
          <TypeAnimation
       sequence={[
@@ -28,7 +28,7 @@ const Hero = () => {
       repeat={Infinity}
     />
         </h1>
-        <p className="text-gray-400 text-lg lg:text-xl px-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi omnis numquam pariatur reprehenderit, error, eaque odit quia perspiciatis quasi consectetur tenetur, debitis cupiditate. In quos earum dolor eveniet repudiandae vel.</p>
+        <p className="text-gray-700 text-lg lg:text-xl px-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi omnis numquam pariatur reprehenderit, error, eaque odit quia perspiciatis quasi consectetur tenetur, debitis cupiditate. In quos earum dolor eveniet repudiandae vel.</p>
       </div >
       <div className='place-self-center'>
     
