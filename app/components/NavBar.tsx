@@ -7,7 +7,7 @@ import {
 
 } from "@nextui-org/navbar";
 
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import { ThemeSwitch } from "./theme";
 import { Link } from "@nextui-org/link";
 
@@ -50,8 +50,48 @@ export const Navbar  = () => {
     },
    	]
 		 
-		 const [isActive, setIsActive] = useState<string | null>('/');
+		 const [isActive, setIsActive] = useState<string | null>('');
 		 
+
+		useEffect(() => {
+			const handleScroll = () => {
+				const scrollY = window.scrollY;
+
+				
+				switch (true) {
+					
+					case scrollY < 500:
+							setIsActive('#');
+							break;
+					case scrollY < 1000:
+							setIsActive('#about');
+							break;
+					case scrollY < 1500:
+							setIsActive('#projects');
+							break;
+					case scrollY < 2000:
+							setIsActive('#education');
+							break;
+					default:
+							setIsActive('#');
+			}
+			
+				} 
+				if (scrollY === 0) {
+					setIsActive('#');}
+			
+			if (isActive !== null) {
+				window.location.hash = isActive;
+			
+			};
+			window.addEventListener('scroll', handleScroll);
+	
+			
+			return () => {
+				window.removeEventListener('scroll', handleScroll);
+			};
+		}, [isActive]);
+	
 	return (
 		
 		<section className="flex justify-center items-center p-4 fixed top-0 w-full h-16 z-50">
