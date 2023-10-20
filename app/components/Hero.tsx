@@ -32,7 +32,7 @@ const Hero = () => {
       </div >
       <div className='place-self-center'>
     
-      <Avatar isBordered color='secondary' radius="full"  src="profile.jpeg"  className="relative w-full mt-12 w-22 h-22 " />
+      <Avatar isBordered color='secondary' radius="full"  src="profile.jpeg"  className="relative w-full mt-12 w-22 h-22 hidden sm:block" />
    </div> </div>
 
   </section>
