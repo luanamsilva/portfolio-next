@@ -97,7 +97,7 @@ export const Navbar  = () => {
 		<section className="flex justify-center items-center p-4 fixed top-0 w-full h-16 z-50">
     <div className='w-full '>
 		<NextUINavbar maxWidth="xl" position="sticky">
-			<NavbarContent className=" " justify="start">
+			<NavbarContent className="" justify="start">
 				<div className="mx-auto  rounded-full p-2 ">
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
 					{navItems.map((item) => (

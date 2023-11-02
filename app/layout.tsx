@@ -3,7 +3,9 @@ import type { Metadata } from 'next'
 import { Providers } from './providers'
 import { siteConfig } from "./config/site";
 import { Navbar } from "./components/NavBar";
+import { Inter} from 'next/font/google'
 
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 
 
@@ -31,12 +33,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="pt-BR">
+		<html className={inter.variable} lang="pt-BR">
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 			
 			<body>
 			
-					<div className="relative flex flex-col h-screen">
+					<div className="relative flex flex-col h-screen antialiased">
 					
 						<main className="container mx-auto max-w-7xl  px-6 flex-grow">
 							<Navbar/>
