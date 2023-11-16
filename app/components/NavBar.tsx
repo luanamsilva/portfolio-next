@@ -11,8 +11,6 @@ import { useState , useEffect} from "react";
 import { ThemeSwitch } from "./theme";
 import { Link } from "@nextui-org/link";
 
-import { link as linkStyles } from "@nextui-org/theme";
-
 import { siteConfig } from "../config/site";
 import NextLink from "next/link";
 
@@ -142,11 +140,9 @@ export const Navbar  = () => {
 			</NavbarContent>
 
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-				<Link isExternal href={siteConfig.links.github} aria-label="Github">
-					<GithubIcon className="text-default-500" />
-				</Link>
+			
 	
-				<NavbarMenuToggle />
+				<NavbarMenuToggle className="text-secondary" />
 			</NavbarContent>
 
 			
