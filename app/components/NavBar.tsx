@@ -49,7 +49,7 @@ export const Navbar  = () => {
    	]
 		 
 		 const [isActive, setIsActive] = useState<string | null>('');
-		 
+		 const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 		useEffect(() => {
 			const handleScroll = () => {
@@ -142,7 +142,27 @@ export const Navbar  = () => {
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
 			
 	
-				<NavbarMenuToggle className="text-secondary" />
+				<NavbarMenuToggle className="text-secondary" 
+				onClick={() => setIsMenuOpen(!isMenuOpen)} />
+				    {isMenuOpen && (
+              <ul className="flex flex-col items-end p-4 shadow-md rounded-md absolute top-16 right-4">
+                {navItems.map((item) => (
+                  <NavbarItem key={item.href}>
+                    <NextLink
+                      className="text-secondary hover:text-pink-500"
+                      color="foreground"
+                      href={isActive ? item.href : "/"}
+                      onClick={() => {
+                        setIsMenuOpen(false);
+                        setIsActive(item.href);
+                      }}
+                    >
+                      {item.label}
+                    </NextLink>
+                  </NavbarItem>
+                ))}
+              </ul>
+            )}
 			</NavbarContent>
 
 			
