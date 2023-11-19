@@ -19,7 +19,7 @@ const Projects = () => {
   return (
     <section className="h-screen flex justify-center items-center">
       <div className="w-full md:w-3/4">
-        <h1>Projetos</h1>
+      <h1 className='bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-pink-500 lg:text-5xl w-full pb-8'>Projetos</h1>
         <div className='grid justify-center grid-cols-auto-fit gap-4 md:grid-cols-1fr md:gap-8 px-4 md:px-0 md:py-20 relative'>
         <Accordion selectionMode="multiple">
           <AccordionItem
