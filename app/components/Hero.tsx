@@ -2,6 +2,7 @@
 import React from 'react'
 import {Avatar} from "@nextui-org/react";
 import { TypeAnimation } from 'react-type-animation';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -34,7 +35,14 @@ const Hero = () => {
     
       <Avatar isBordered radius="full"  src="profile.jpeg"  className="relative mt-12 w-60 h-60 hidden md:block " />
    </div> </div>
-
+   <div className='flex gap-4'>
+   <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg' width={40} height={40} alt='react'/>
+   <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg' width={40} height={40} alt='react'/>
+<Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg' width={40} height={40} alt='react'/>
+<Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg' width={40} height={40} alt='react'/>
+<Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg' width={40} height={40} alt='react'/>
+<Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg' width={40} height={40} alt='react'/>
+  </div>
   </section>
   )
 }
