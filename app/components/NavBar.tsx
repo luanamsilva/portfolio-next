@@ -92,7 +92,7 @@ export const Navbar  = () => {
 	
 	return (
 		
-		<section className="flex justify-center items-center p-4 fixed top-0 w-full h-16 z-50">
+		<section className="flex justify-center items-center fixed top-0 w-full h-16 z-50">
     <div className='w-full '>
 		<NextUINavbar maxWidth="xl" position="sticky">
 			<NavbarContent className="" justify="start">
