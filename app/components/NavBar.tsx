@@ -149,7 +149,7 @@ export const Navbar  = () => {
                 {navItems.map((item) => (
                   <NavbarItem key={item.href}>
                     <NextLink
-                      className="text-secondary hover:text-pink-500"
+                      className="text-secondary hover:text-pink-500 hover:bg-secondary opacity-90  rounded-md p-1"
                       color="foreground"
                       href={isActive ? item.href : "/"}
                       onClick={() => {

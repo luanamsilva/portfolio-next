@@ -29,13 +29,15 @@ const Hero = () => {
       repeat={Infinity}
     />
         </h1>
-        <p className="text-gray-700 text-lg lg:text-xl px-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi omnis numquam pariatur reprehenderit, error, eaque odit quia perspiciatis quasi consectetur tenetur, debitis cupiditate. In quos earum dolor eveniet repudiandae vel.</p>
+        <p className="text-gray-700 text-lg lg:text-xl px-4"> Bacharel em Administração, sou uma profissional em transição de carreira, buscando novas experiências na área da tecnologia. Migrei para a área de desenvolvimento Web à procura de liberdade criativa. Considero-me uma pessoa dedicada, com facilidade de trabalhar em equipe e em constante processo de desenvolvimento e aprendizagem.</p>
       </div >
       <div className='place-self-center'>
     
       <Avatar isBordered radius="full"  src="profile.jpeg"  className="relative mt-12 w-60 h-60 hidden md:block " />
    </div> </div>
+  
    <div className='flex gap-4'>
+    
    <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg' width={40} height={40} alt='react'/>
    <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg' width={40} height={40} alt='react'/>
 <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg' width={40} height={40} alt='react'/>
