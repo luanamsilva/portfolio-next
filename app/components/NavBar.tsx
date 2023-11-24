@@ -32,9 +32,9 @@ export const Navbar  = () => {
 		},
  
     {
-      label: "Sobre",
-      href: "#about",
-			id: 'about'
+      label: "Experiências",
+      href: "experience",
+			id: 'experince'
     },
     {
       label: "Projetos",
@@ -62,7 +62,7 @@ export const Navbar  = () => {
 							setIsActive('#');
 							break;
 					case scrollY < 1000:
-							setIsActive('#about');
+							setIsActive('#experience');
 							break;
 					case scrollY < 1500:
 							setIsActive('#projects');
