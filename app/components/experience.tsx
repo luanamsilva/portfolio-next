@@ -1,6 +1,15 @@
-import React from 'react'
+"use client"
+import React from 'react';
+import {Accordion, AccordionItem} from "@nextui-org/react";
+
 
 const Experience = () => {
+  const experienceOne = [  "atendimento ao cliente",
+  " financeiro",
+ " cadastro de produtos e serviços",
+  " criação e análise de planilhas de dados"]
+ 
+  const experienceTwo = [" Desenvolvimento de páginas Web", " Atuação com responsividade e acessibilidade"]
   return (
     <section className='flex flex-col justify-center items-center'>
     <div className='w-full md:w-3/4'>
@@ -8,7 +17,26 @@ const Experience = () => {
   Experiência
 </h1>    
 
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, nihil est vero velit voluptas accusantium aliquam dolores. Veritatis nihil earum quisquam? Eligendi ducimus hic voluptate vel expedita, optio beatae dolorem!
+<Accordion>
+      <AccordionItem key="1" aria-label="administration" title="Administrativo - Auto Peças Mecânica DS Ltda">
+      <ul className="list-disc ml-6">
+        {experienceOne.map((item, index) => (
+          <li key={index} className="mb-2">
+            {item}
+          </li>
+        ))}
+      </ul>
+      </AccordionItem>
+      <AccordionItem key="2" aria-label="developer" title="Desenvolvedora Front-end - Autônomo">
+      <ul className="list-disc ml-6">
+        {experienceTwo.map((item, index) => (
+          <li key={index} className="mb-2">
+            {item}
+          </li>
+        ))}
+      </ul>
+      </AccordionItem>
+      </Accordion>
     </div>
     </section>
   )
