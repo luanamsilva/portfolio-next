@@ -40,7 +40,7 @@ export default function RootLayout({
 			
 					<div className="relative flex flex-col h-screen antialiased">
 					
-						<main className="container mx-auto max-w-7xl  px-6 flex-grow">
+						<main className="container mx-auto text-gray-600 max-w-7xl  px-6 flex-grow">
 							<Navbar/>
 							{children}
 						</main>
