@@ -9,7 +9,7 @@ export default function Home() {
  
 <Hero/>
 
-<section id="about">
+<section id="experience">
       <Experience/>
  </section>
  <section id="projects">

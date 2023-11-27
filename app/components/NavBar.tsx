@@ -33,8 +33,8 @@ export const Navbar  = () => {
  
     {
       label: "Experiências",
-      href: "experience",
-			id: 'experince'
+      href: "#experience",
+			id: 'experience'
     },
     {
       label: "Projetos",
