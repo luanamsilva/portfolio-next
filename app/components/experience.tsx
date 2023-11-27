@@ -4,12 +4,13 @@ import {Accordion, AccordionItem} from "@nextui-org/react";
 
 
 const Experience = () => {
-  const experienceOne = [  "atendimento ao cliente",
+const experienceOne = [" Desenvolvimento de páginas Web", " Atuação com responsividade e acessibilidade"]  
+
+  const experienceTwo = [  "atendimento ao cliente",
   " financeiro",
  " cadastro de produtos e serviços",
   " criação e análise de planilhas de dados"]
  
-  const experienceTwo = [" Desenvolvimento de páginas Web", " Atuação com responsividade e acessibilidade"]
   return (
     <section className='flex flex-col justify-center items-center'>
     <div className='w-full md:w-3/4'>
@@ -18,7 +19,7 @@ const Experience = () => {
 </h1>    
 
 <Accordion>
-      <AccordionItem key="1" aria-label="administration" title="Administrativo - Auto Peças Mecânica DS Ltda">
+      <AccordionItem key="1" aria-label="developer" title="Desenvolvedora Front-end - Autônomo">
       <ul className="list-disc ml-6">
         {experienceOne.map((item, index) => (
           <li key={index} className="mb-2">
@@ -27,7 +28,7 @@ const Experience = () => {
         ))}
       </ul>
       </AccordionItem>
-      <AccordionItem key="2" aria-label="developer" title="Desenvolvedora Front-end - Autônomo">
+      <AccordionItem key="2" aria-label="administration" title="Administrativo - Auto Peças Mecânica DS Ltda">
       <ul className="list-disc ml-6">
         {experienceTwo.map((item, index) => (
           <li key={index} className="mb-2">
