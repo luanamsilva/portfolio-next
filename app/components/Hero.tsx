@@ -29,7 +29,9 @@ const Hero = () => {
       repeat={Infinity}
     />
         </h1>
-        <p className="text-gray-700 text-lg lg:text-xl px-4"> Bacharel em Administração, sou uma profissional em transição de carreira, buscando novas experiências na área da tecnologia. Migrei para a área de desenvolvimento Web à procura de liberdade criativa. Considero-me uma pessoa dedicada, com facilidade de trabalhar em equipe e em constante processo de desenvolvimento e aprendizagem.</p>
+        <p className="text-gray-700 text-lg lg:text-xl px-4"> Sou formada em Administração, mas sempre fui apaixonada pela área da tecnologia. 
+ Migrei para a área de desenvolvimento Web em busca de novos desafios e oportunidades para continuar crescendo profissionalmente.
+Considero-me uma pessoa dedicada, com facilidade de trabalhar em equipe e em constante processo de desenvolvimento e aprendizagem.</p>
       </div >
       <div className='place-self-center'>
     
