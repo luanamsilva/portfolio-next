@@ -57,21 +57,20 @@ export const Navbar  = () => {
 
 				
 				switch (true) {
-					
 					case scrollY < 500:
-							setIsActive('#');
-							break;
-					case scrollY < 1000:
-							setIsActive('#experience');
-							break;
+						setIsActive('#');
+						break;
+					case scrollY < 700:
+						setIsActive('#experience');
+						break;
 					case scrollY < 1500:
-							setIsActive('#projects');
-							break;
-					case scrollY < 2000:
-							setIsActive('#education');
-							break;
+						setIsActive('#projects');
+						break;
+					case scrollY < 2500:
+						setIsActive('#education');
+						break;
 					default:
-							setIsActive('#');
+						setIsActive('#');
 			}
 			
 				} 

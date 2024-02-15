@@ -45,7 +45,7 @@ Considero-me uma pessoa dedicada, com facilidade de trabalhar em equipe e em con
 <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg' width={40} height={40} alt='react'/>
 <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg' width={40} height={40} alt='react'/>
 <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg' width={40} height={40} alt='react'/>
-<Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg' width={40} height={40} alt='react'/>
+
   </div>
   </section>
   )
