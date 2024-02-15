@@ -33,9 +33,9 @@ const Hero = () => {
  Migrei para a área de desenvolvimento Web em busca de novos desafios e oportunidades para continuar crescendo profissionalmente.
 Considero-me uma pessoa dedicada, com facilidade de trabalhar em equipe e em constante processo de desenvolvimento e aprendizagem.</p>
       </div >
-      <div className='place-self-center'>
+      <div className='place-self-center '>
     
-      <Avatar isBordered radius="full"  src="profile.jpeg"  className="relative mt-12 w-60 h-60 hidden md:block " />
+      <Avatar color='secondary' radius="full" src="avatar.png"  className="relative mt-12 w-60 h-60 hidden md:block"  />
    </div> </div>
   
    <div className='flex gap-4'>
