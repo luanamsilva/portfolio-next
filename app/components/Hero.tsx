@@ -35,7 +35,7 @@ Considero-me uma pessoa dedicada, com facilidade de trabalhar em equipe e em con
       </div >
       <div className='place-self-center '>
     
-      <Avatar color='secondary' radius="full" src="avatar.png"  className="relative mt-12 w-60 h-60 hidden md:block"  />
+      <Avatar isBordered color='secondary' radius="full" src="avatar32.png"  className="relative mt-12 w-60 h-60 hidden md:block"  />
    </div> </div>
   
    <div className='flex gap-4'>
