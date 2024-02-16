@@ -7,12 +7,12 @@ import { Curriculum } from './Curriculum';
 
 const Hero = () => {
   return (
-    <section className="h-screen flex flex-col justify-center items-center md:mt-0 mt-16">
-      <div className="flex flex-col md:flex-row m-2 p-2 gap-2 w-full md:w-3/4">
+    <section className="flex flex-col mt-24 justify-center items-center">
+      <div className="flex flex-col md:flex-row  gap-2 w-full md:w-3/4">
         <div className="place-self-center text-center md:text-left ">
-          <h1 className="text-secondary mb-4 pt-8 px-4 text-xl">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-500 lg:text-5xl">
-              Olá, eu sou Luana Moura,{' '}
+          <h1 className="text-secondary mb-4 px-4 text-3xl">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-500 lg:text-5xl md:text-4xl">
+              Olá, eu sou a Luana Moura,{' '}
             </span>
             <div className="py-6">
               <TypeAnimation
