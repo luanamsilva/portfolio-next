@@ -90,3 +90,26 @@ export const SunFilledIcon = ({
 		</g>
 	</svg>
 );
+
+export const DownloadIcon: React.FC<IconSvgProps> = ({
+	size = 24,
+	width,
+	height,
+	...props
+}) => {
+	return (
+		<svg
+			height={size || height}
+			viewBox="0 0 24 24"
+			width={size || width}
+			{...props}
+		>
+		
+		<path d="M12 15.4L17.6 9h-4.6V3H8.4v6H4zM4 18h16v2H4z"
+			fill="#9560D3"
+			fillRule="evenodd">
+
+		 </path>
+		</svg>
+	);
+};

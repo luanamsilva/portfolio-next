@@ -1,8 +1,9 @@
 'use client';
 import React from 'react';
-import { Avatar } from '@nextui-org/react';
+import { Avatar, Button } from '@nextui-org/react';
 import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image';
+import { Curriculum } from './Curriculum';
 
 const Hero = () => {
   return (
@@ -40,6 +41,9 @@ const Hero = () => {
             aprendizagem.
           </p>
         </div>
+        <div className="flex flex-wrap gap-4 items-center">
+          
+    </div>
         <div className="place-self-center ">
           <Avatar
             isBordered
@@ -48,10 +52,11 @@ const Hero = () => {
             src="avatar32.png"
             className="relative mt-12 w-60 h-60 hidden md:block"
           />
+          
         </div>{' '}
       </div>
-
-      <div className="flex gap-4">
+      <Curriculum/>
+        <div className="flex gap-4 pt-8">
         <Image
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
           width={40}
