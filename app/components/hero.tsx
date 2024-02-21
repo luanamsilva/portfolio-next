@@ -3,7 +3,7 @@ import React from 'react';
 import { Avatar, Button } from '@nextui-org/react';
 import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image';
-import { Curriculum } from './Curriculum';
+import { Curriculum } from './curriculum';
 
 const Hero = () => {
   return (

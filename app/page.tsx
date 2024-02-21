@@ -1,8 +1,9 @@
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
+import Footer from "./components/footer"
+import Hero from "./components/hero"
 import Experience from "./components/experience"
 import Education from "./components/education"
 import Projects from "./components/projects"
+import Contact from "./components/contact"
 export default function Home() {
   return (
     <main>
@@ -17,6 +18,9 @@ export default function Home() {
  </section>
  <section id="education">
       <Education/>
+ </section>
+ <section id="contac">
+      <Contact/>
  </section>
  <Footer/>
     </main>

@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Providers } from './providers';
 import { siteConfig } from './config/site';
-import { Navbar } from './components/NavBar';
+import { Navbar } from './components/navBar';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
@@ -31,16 +31,19 @@ export default function RootLayout({
 }) {
   return (
     <html className={inter.variable} lang="pt-BR">
-      <Providers themeProps={{ attribute: 'class', defaultTheme: 'dark' }}>
-        <body>
+      <body> 
+        <Providers themeProps={{ attribute: 'class', defaultTheme: 'dark' }}>
+         
           <div className="relative flex flex-col h-screen antialiased">
             <main className="container mx-auto text-gray-600 max-w-7xl  px-2 flex-grow">
               <Navbar />
               {children}
             </main>
           </div>
+         </Providers>
         </body>
-      </Providers>
+
+     
     </html>
   );
 }

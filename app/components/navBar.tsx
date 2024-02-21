@@ -46,6 +46,11 @@ export const Navbar  = () => {
       href: "#education",
 			id: "education"
     },
+		{
+      label: "Contato",
+      href: "#contact",
+			id: "contact"
+    },
    	]
 		 
 		 const [isActive, setIsActive] = useState<string | null>('');
@@ -66,8 +71,11 @@ export const Navbar  = () => {
 					case scrollY < 1500:
 						setIsActive('#projects');
 						break;
-					case scrollY < 2500:
+					case scrollY < 2000:
 						setIsActive('#education');
+						break;
+						case scrollY < 2500:
+						setIsActive('#contact');
 						break;
 					default:
 						setIsActive('#');
