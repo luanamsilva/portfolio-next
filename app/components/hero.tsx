@@ -31,7 +31,7 @@ const Hero = () => {
               />
             </div>
           </h1>
-          <p className="text-gray-700 text-lg lg:text-xl px-4">
+          <p className="text-gray-700 text-justify text-lg lg:text-xl px-4">
             {' '}
             Formada em Administração, trabalhei muitos anos na área administrativa lidando com as mais diversas funções. No entanto, minha verdadeira paixão sempre foi a tecnologia, por isso resolvi iniciar minha transição de carreira. Atualmente, estou cursando Ciência da Computação. 
             Durante minha transição desenvolvi habilidades em front-end como HTML, CSS, JavaScript, React e Git/GitHub, buscando sempre aprender coisas novas e oportunidades de crescimento.

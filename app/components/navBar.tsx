@@ -146,7 +146,7 @@ export const Navbar  = () => {
 				</NavbarItem>
 			</NavbarContent>
 
-			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+			<NavbarContent className="sm:hidden basis-1 pl-4" justify="center">
 			
 	
 				<NavbarMenuToggle className="text-secondary" 
