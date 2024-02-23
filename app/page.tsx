@@ -19,7 +19,7 @@ export default function Home() {
  <section id="education">
       <Education/>
  </section>
- <section id="contac">
+ <section id="contact">
       <Contact/>
  </section>
  <Footer/>

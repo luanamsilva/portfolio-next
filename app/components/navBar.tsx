@@ -71,10 +71,10 @@ export const Navbar  = () => {
 					case scrollY < 1500:
 						setIsActive('#projects');
 						break;
-					case scrollY < 2000:
+					case scrollY < 1800:
 						setIsActive('#education');
 						break;
-						case scrollY < 2500:
+						case scrollY < 2000:
 						setIsActive('#contact');
 						break;
 					default:

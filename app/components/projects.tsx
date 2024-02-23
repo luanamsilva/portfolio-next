@@ -33,9 +33,9 @@ const Projects = () => {
                   <Image
                     alt="Bag"
                     className=" object-cover"
-                    height={400}
+                    height={300}
                     src="bag.jpeg"
-                    width={400}
+                    width={300}
                   />
                   <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
                     <Button
@@ -93,9 +93,9 @@ const Projects = () => {
                   <Image
                     alt="personalized"
                     className="w-full max-h-[400px] object-cover"
-                    height={400}
+                    height={300}
                     src="personalizados.png"
-                    width={400}
+                    width={300}
                   />
                   <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
                     <Button
@@ -154,9 +154,9 @@ const Projects = () => {
                   <Image
                     alt="Movies"
                     className="object-cover"
-                    height={400}
+                    height={300}
                     src="filmes.png"
-                    width={400}
+                    width={300}
                   />
                   <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
                     <Button
